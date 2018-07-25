@@ -31,7 +31,7 @@ app.use(cors()); //needed to overcome same origin restriction error
 
 
 app.get('/', (req, res) => {
-	res.send(database.users);
+	res.send('it is working');
 })
 
 app.post('/signin', signIn.handleSignIn(db, bcrypt)); //(req, res) fed automatically and put into the handler via currying
