@@ -1,7 +1,8 @@
 const Clarifai = require('clarifai');
 
 const app = new Clarifai.App({
- apiKey: 'aa63355cf1b54c3aad95dd1ca6e6ffba'
+ //ALWAYS STORE PASSWORDS AND KEYS AS ENVIRONMENT VARIABLES
+ apiKey: process.env.CLARIFAI_API_KEY
 });
 
 const handleApiCall = (req, res) => {
